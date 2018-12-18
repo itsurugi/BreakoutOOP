@@ -12,6 +12,7 @@ namespace Breakout
 {
     public partial class frmMenu : Form
     {
+        frmGame game = new frmGame();
         public frmMenu()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace Breakout
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-
+            game.ShowDialog();
         }
     }
 }
